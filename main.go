@@ -3,17 +3,19 @@ package main
 import "fmt"
 
 func main() {
-	
-	var name string
-	var age int
 
-	fmt.Print("Enter your name: ")
-	fmt.Scanln(&name)
+	var age int
 
 	fmt.Print("Enter your age: ")
 	fmt.Scanln(&age)
 
-	fmt.Println("Hello", name)
-	fmt.Println("You are", age, "years old!")
+	if age < 18 {
+		fmt.Println("You are a minor.")
+		
+	}else if age >= 18 && age <= 64 {
+		fmt.Println("You are an adult.")
+	}else{
+		fmt.Println("You are a senior.")
+	}
 
 }
