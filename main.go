@@ -4,18 +4,20 @@ import "fmt"
 
 func main() {
 
-	var age int
+  var choice int
 
-	fmt.Print("Enter your age: ")
-	fmt.Scanln(&age)
+  fmt.Print("Enter the choice:")
+  fmt.Scanln(&choice)
 
-	if age < 18 {
-		fmt.Println("You are a minor.")
-		
-	}else if age >= 18 && age <= 64 {
-		fmt.Println("You are an adult.")
-	}else{
-		fmt.Println("You are a senior.")
-	}
+  switch (choice){
+  case 1:
+	     fmt.Println("Linux")
+  case 2:
+	     fmt.Println("Docker")
+  case 3:
+	     fmt.Println("Kubernetes")
+  default:
+	     fmt.Println("Unknown")	
 
+  }
 }
