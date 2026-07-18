@@ -37,6 +37,15 @@ See `main.go`
 
 ---
 
+---
+
+## 📂 Exercises
+
+- Practice exercises are available in `exercises.md`.
+- Reference solutions are available in the `solutions/` directory.
+
+---
+
 ## ❌ Common Mistakes
 
 Using `=` instead of `:=` when declaring a new variable.
@@ -49,6 +58,18 @@ name = "Negar"
 
 This causes an error if `name` has not been declared.
 
+---
+
+---
+
+## 💭 Personal Notes
+
+A variable is like a labeled box.
+
+The label is the variable's name, and the value is what is stored inside the box.
+
+- `:=` creates a new variable.
+- `=` updates the value of an existing variable.
 ---
 
 ## 📌 Summary
